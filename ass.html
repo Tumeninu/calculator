@@ -1,0 +1,162 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="ass.css">
+    <script src="./ass.js"></script>
+</head>
+<body>
+   <!-- addition -->
+      <input type="text" id="first">
+
+        <i class="fa-solid fa-plus" id="equals"></i>
+      
+        <input type="text" id="second">
+
+        <i class="fa-regular fa-equals" id="equals"></i>
+
+        <input type="text" id="third">
+
+        <button onclick="go()">Add</button><br><br>
+
+
+
+       <!-- subtracttion -->
+
+        <input type="text" id="four">
+
+        <i class="fa-solid fa-minus" id="equals"></i>
+      
+        <input type="text" id="five">
+
+        <i class="fa-regular fa-equals" id="equals"></i>
+        
+        <input type="text" id="six">
+
+        <button onclick="come()">subtract</button><br><br>
+
+
+
+
+        <!-- multiplication -->
+
+        <input type="text" id="seven">
+
+        
+
+        <i class="fa-sharp fa-solid fa-xmark" id="equals"></i>
+      
+        <input type="text" id="eight">
+
+        <i class="fa-regular fa-equals" id="equals"></i>
+
+        <input type="text" id="nine">
+
+        <button onclick="up()">multiply</button><br><br>
+
+
+
+
+
+        <!-- division -->
+
+        <input type="text" id="ten">
+       
+        <i class="fa-solid fa-divide" id="equals"></i>
+      
+        <input type="text" id="eleven">
+
+        <i class="fa-regular fa-equals" id="equals"></i>
+
+        <input type="text" id="twelve">
+
+        <button onclick="down()">division</button><br><br>
+
+
+
+        <!-- modulus -->
+
+        <input type="text" id="thirteen">
+
+        <i class="fa-solid fa-percent" id="equals"></i>
+      
+        <input type="text" id="forteen">
+
+        <i class="fa-regular fa-equals" id="equals"></i>
+
+        <input type="text" id="fifteen">
+
+        <button onclick="at()">modulus</button>
+
+
+
+
+
+
+
+       
+        
+       
+       <script>
+
+        // addition
+          function go(){
+            var x = Number(document.getElementById('first').value)
+            var y =Number(document.getElementById('second').value)
+            var z = document.getElementById('third')
+            console.log(x + y) 
+            z.value = x + y
+          }
+
+
+        //   subtraction
+
+          function come(){
+            var a = Number(document.getElementById('four').value)
+            var b = Number(document.getElementById('five').value)
+            var c = document.getElementById('six')
+            console.log(a - b)
+            c.value = a - b
+          }
+
+
+        //   multiply
+
+        function up(){
+            var l = Number(document.getElementById('seven').value)
+            var m = Number(document.getElementById('eight').value)
+            var n = document.getElementById('nine')
+            console.log(l * m)
+            n.value = l * m
+        }
+
+
+        // division
+
+        function down(){
+            var o = Number(document.getElementById('ten').value)
+            var p = Number(document.getElementById('eleven').value)
+            var q = document.getElementById('twelve')
+            console.log(o / p)
+            q.value = o / p
+        }
+
+
+        // modulus
+
+        function at(){
+            var r = Number(document.getElementById('thirteen').value)
+            var s = Number(document.getElementById('forteen').value)
+            var t = document.getElementById('fifteen')
+            console.log(r % s)
+            t.value = r % s
+        }
+
+
+           
+        </script>
+</body>
+</html>
